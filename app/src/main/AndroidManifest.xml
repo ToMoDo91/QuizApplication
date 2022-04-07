@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ntk.quizzy">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizzy">
+        <activity
+            android:name=".Views.Activities.About"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.QuizResult"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.AddQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.AllQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.MainActivity$QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activities.AddQuestion">
+
+
+    <ImageView
+        android:id="@+id/PreviewImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PreviewImage"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Add Question :-)"></TextView>
+
+        <EditText
+            android:id="@+id/addQTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Write the ques here"></EditText>
+
+        <EditText
+            android:id="@+id/addQop1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer 1"></EditText>
+
+        <EditText
+            android:id="@+id/addQop2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer 2"></EditText>
+
+        <EditText
+            android:id="@+id/addQop3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer 3"></EditText>
+
+        <EditText
+            android:id="@+id/addQop4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="answer 4"></EditText>
+
+        <EditText
+            android:id="@+id/addRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter the right answer between 1 and 4"
+            android:inputType="number"></EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addQImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="Add photo"></Button>
+
+    <Button
+        android:id="@+id/addQsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+
+        android:text="Save"></Button>
+
+</RelativeLayout>

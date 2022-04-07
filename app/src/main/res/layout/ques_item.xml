@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/preImageListItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/NumbRightAnswer"></ImageView>
+
+        <TextView
+            android:id="@+id/NumbRightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/NumbRightAnswer"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewAnswerOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewTitle"
+            android:text="TextViewAnswerOne"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewAnswerTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewAnswerOne"
+            android:text="TextViewAnswerTwo"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewAnswerThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewAnswerTwo"
+            android:text="TextViewAnswerThree"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewAnswerFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewAnswerThree"
+            android:text="TextViewAnswerFour"></TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
